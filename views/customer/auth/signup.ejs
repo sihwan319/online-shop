@@ -1,0 +1,42 @@
+<%- include('../includes/head', {pageTitle: '회원등록'}) %>
+</head>
+<body>
+    <%- include('../includes/header') %>
+    <main>
+        <h1>새 계정 생성</h1>
+        <form action="" method="">
+            <p>
+                <label for="email">이메일</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+                <label for="email-confirm">이메일 확인</label>
+                <input type="email" id="email-confirm" name="email-confirm" required>
+            </p>
+            <p>
+                <label for="password"></label>
+                <input type="password" id="password" name="password" minlength="6" required>
+            </p>
+            <hr>
+            <p>
+                <label for="full-name">이름</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </p>
+            <p>
+                <label for="street">도로명</label>
+                <input type="text" id="street" name="street" required>
+            </p>
+            <p>
+                <label for="postal">우편번호</label>
+                <input type="text" id="postal" name="postal" minlength="5" maxlength="5" required>
+            </p>
+            <p>
+                <label for="city">도시</label>
+                <input type="text" id="city" name="city" required>
+            </p>
+            <button class="btn">계정 생성</button>
+            <p id="switch-form"><a href="/login">로그인</a></p>
+
+        </form>
+    </main>
+<%- include('../includes/footer') %>
